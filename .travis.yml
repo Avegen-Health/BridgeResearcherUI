@@ -9,6 +9,9 @@ script:
 deploy:
   matrix:
   - provider: s3
+    access_key_id: AKIAWKBC6B4EVCA652NR
+    secret_access_key:
+      secure: 4crKCaSzpoJ97w1++c43LGwJQrRyDHkF1uFEgL8oLObhwfjaNcsvrdX6r3h1/uK1CG1yW1CQAZWhgP55Cz+RRgxByGnWG31iB5G/LPDjxpkjJjyRvBEZi9TEmXnE1RyHIYQhouUl+TExa5/pcBtx4TJHkLYpM07Pa/Bq/gDd96iAlpmq2tldQT1BvUh7ohU5uzLG3NjFV3WVfM9YoLEm2wVEDdemft50VPxYUaGQmb8NP4EHD9Zrxb3rgYa08UkinHvEZTJ+otg9a0vvcdayC6aryAIES3TSmvmP+OCO4fbUXavRqRDYVBuNz1FPScbaEyC1+XHzPYZmLSJ/YBjl3YKYC+1DK1RkhERmzvjKWMdpEuzIFrTvomrV67/3GwtOu8Vu16wxLUAA1ZGk63yhX28M2rDrsoL/kqI8dQviNkDDUy0bL8XjCqhM8mW8Tnmbft1PZyVYz1bZEXZGhG6su4SYT4cSRHNr1Aj/I47hxRK5hoXCc4aOo8gHa7USFlTtnKQ9I3/pjWeXLJpvEqhbuRYHfkJvsJ/Y3TDGiFzjJkrh+D2DDexBAhIVWmTk+MZRytRbIaTh9W5x+r/I0MPayGwpbzmCOkZ5+TJnjiEF5NKCgSiIZW/Wflk6HL41eoxKfbGGegUh44VvMMQWV/sNRCJgw2mPVls5fZWPkmOi/wc=
     edge: true
     bucket: research-staging.gvbridge.org
     region: us-west-2
@@ -19,6 +22,9 @@ deploy:
     on:
       branch: develop
   - provider: s3
+    access_key_id: AKIAWKBC6B4EVCA652NR
+    secret_access_key:
+      secure: 4crKCaSzpoJ97w1++c43LGwJQrRyDHkF1uFEgL8oLObhwfjaNcsvrdX6r3h1/uK1CG1yW1CQAZWhgP55Cz+RRgxByGnWG31iB5G/LPDjxpkjJjyRvBEZi9TEmXnE1RyHIYQhouUl+TExa5/pcBtx4TJHkLYpM07Pa/Bq/gDd96iAlpmq2tldQT1BvUh7ohU5uzLG3NjFV3WVfM9YoLEm2wVEDdemft50VPxYUaGQmb8NP4EHD9Zrxb3rgYa08UkinHvEZTJ+otg9a0vvcdayC6aryAIES3TSmvmP+OCO4fbUXavRqRDYVBuNz1FPScbaEyC1+XHzPYZmLSJ/YBjl3YKYC+1DK1RkhERmzvjKWMdpEuzIFrTvomrV67/3GwtOu8Vu16wxLUAA1ZGk63yhX28M2rDrsoL/kqI8dQviNkDDUy0bL8XjCqhM8mW8Tnmbft1PZyVYz1bZEXZGhG6su4SYT4cSRHNr1Aj/I47hxRK5hoXCc4aOo8gHa7USFlTtnKQ9I3/pjWeXLJpvEqhbuRYHfkJvsJ/Y3TDGiFzjJkrh+D2DDexBAhIVWmTk+MZRytRbIaTh9W5x+r/I0MPayGwpbzmCOkZ5+TJnjiEF5NKCgSiIZW/Wflk6HL41eoxKfbGGegUh44VvMMQWV/sNRCJgw2mPVls5fZWPkmOi/wc=
     edge: true
     bucket: research.gvbridge.org
     region: us-west-2
@@ -28,6 +34,3 @@ deploy:
     local_dir: app
     on:
       branch: release
-  access_key_id: AKIAWKBC6B4EVCA652NR
-  secret_access_key:
-    secure: nVI0ihZwIrXOzSe7Yy8FDSHrWQZmX0JA6iZoQuBnOvqadiW3/B2CdMhjmk43XSJAcrTx48AqNbtVNwZ88/I6E3PdbXW4Of58wPMkV7Xgc6hTnzFH6OxdKjGKl9Hi9njPQUYCwFqHh0hlAfD9UHU3j9IN766vd7ygqbLlBoLQXusvXpbNAVUHP5qyQi6pP1Y3Dwz3c/8JwIxBLe6ZVDJXGIzPT/yckviJF3DiEH37Er0VG+IZ2PG8Z3q3XIZazzdP5FDgBvQ+dar3ajx4zzaPSZCrdhwRVWbQ8DAiNYRc4BV4s7dWMG1Iw24LJ3IT3bItOA7pecJpJunM2hM1y7oWeabe+VRUDjcZ8f81yxZ9/zlZlHcEsyauXVGMTNCMSJt9el4P8OTzIuSE5nYIL970qk+AuKxBOuVjgcQTPmPnFPGUza3kmOqpzqkBxAl1QKA5XkA3St5RB/XD1+EeJnYbibWaUhwXBlot3/n5k2hvM7e+roPLFF6XjeGD4emn8EDU8+dfgY1RPHPGpz6Xl+grtSxUxglbTRQhqHnF4SF4aX9663qrjaj4WI7ypUQLTofSBY8laVEWr8mvzacXksjvbymR2bWrFvHfRN2KZoqAOQqQxAbfeRGWFD0mWNFe+uQknf426WxlxRl4R5bJjk8ae/jfv3iatb/M9AZXkVPZLKg=
