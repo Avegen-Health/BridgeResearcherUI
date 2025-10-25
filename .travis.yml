@@ -7,7 +7,6 @@ script:
 - npm run test
 - npm run release
 deploy:
-  matrix:
   - provider: s3
     access_key_id: AKIAWKBC6B4EVCA652NR
     secret_access_key:
