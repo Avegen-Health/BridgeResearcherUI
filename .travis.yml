@@ -7,9 +7,10 @@ script:
 - npm run test
 - npm run release
 deploy:
+  matrix:
   - provider: s3
     edge: true
-    bucket: research-staging.sagebridge.org
+    bucket: research-staging.gvbridge.org
     region: us-west-2
     skip_cleanup: true
     acl: public_read
@@ -19,11 +20,14 @@ deploy:
       branch: develop
   - provider: s3
     edge: true
-    bucket: research.sagebridge.org
+    bucket: research.gvbridge.org
     region: us-west-2
     skip_cleanup: true
     acl: public_read
     detect_encoding: false
     local_dir: app
     on:
-      branch: release  
+      branch: release
+  access_key_id: AKIAWKBC6B4EVCA652NR
+  secret_access_key:
+    secure: nVI0ihZwIrXOzSe7Yy8FDSHrWQZmX0JA6iZoQuBnOvqadiW3/B2CdMhjmk43XSJAcrTx48AqNbtVNwZ88/I6E3PdbXW4Of58wPMkV7Xgc6hTnzFH6OxdKjGKl9Hi9njPQUYCwFqHh0hlAfD9UHU3j9IN766vd7ygqbLlBoLQXusvXpbNAVUHP5qyQi6pP1Y3Dwz3c/8JwIxBLe6ZVDJXGIzPT/yckviJF3DiEH37Er0VG+IZ2PG8Z3q3XIZazzdP5FDgBvQ+dar3ajx4zzaPSZCrdhwRVWbQ8DAiNYRc4BV4s7dWMG1Iw24LJ3IT3bItOA7pecJpJunM2hM1y7oWeabe+VRUDjcZ8f81yxZ9/zlZlHcEsyauXVGMTNCMSJt9el4P8OTzIuSE5nYIL970qk+AuKxBOuVjgcQTPmPnFPGUza3kmOqpzqkBxAl1QKA5XkA3St5RB/XD1+EeJnYbibWaUhwXBlot3/n5k2hvM7e+roPLFF6XjeGD4emn8EDU8+dfgY1RPHPGpz6Xl+grtSxUxglbTRQhqHnF4SF4aX9663qrjaj4WI7ypUQLTofSBY8laVEWr8mvzacXksjvbymR2bWrFvHfRN2KZoqAOQqQxAbfeRGWFD0mWNFe+uQknf426WxlxRl4R5bJjk8ae/jfv3iatb/M9AZXkVPZLKg=
