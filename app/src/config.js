@@ -64,7 +64,7 @@ export default {
   host: {
     local: "http://localhost:9000",
     develop: "http://bridgeserver2-uat.eba-tstqu8ae.us-east-1.elasticbeanstalk.com",
-    staging: "http://bridgeserver2-uat.eba-tstqu8ae.us-east-1.elasticbeanstalk.com  ",
+    staging: "http://bridgeserver2-uat.eba-tstqu8ae.us-east-1.elasticbeanstalk.com",
     production: "https://ws.sagebridge.org"
   },
   synapseOauthClients: {
