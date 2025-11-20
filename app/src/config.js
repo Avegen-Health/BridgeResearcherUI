@@ -63,8 +63,8 @@ export default {
   ],
   host: {
     local: "http://localhost:9000",
-      develop: "https://bridge-uat.avegen.in",
-      staging: "https://bridge-uat.avegen.in",
+      develop: "http://bridge-uat.avegen.in",
+      staging: "http://bridge-uat.avegen.in",
       production: "https://bridge.avegen.in"
   },
   synapseOauthClients: {
