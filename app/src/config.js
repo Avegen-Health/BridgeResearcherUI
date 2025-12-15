@@ -81,7 +81,7 @@ export default {
     },
     production: {
       vendor: 'synapse',
-      clientId: '100018',
+      clientId: '100435',
       signIn: 'https://signin.synapse.org/?'
     },
     "local-prod": {
@@ -97,7 +97,7 @@ export default {
     },
     "production-prod": {
       vendor: 'synapse',
-      clientId: '100018',
+      clientId: '100435',
       signIn: 'https://signin.synapse.org/?'
     }
   },
