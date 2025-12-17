@@ -63,9 +63,9 @@ export default {
   ],
   host: {
     local: "http://localhost:9000",
-    develop: "https://ws-develop.sagebridge.org",
-    staging: "https://ws-staging.sagebridge.org",
-    production: "https://ws.sagebridge.org"
+      develop: "https://bridge-uat.grip-research.org",
+      staging: "https://bridge-uat.grip-research.org",
+      production: "https://bridge.grip-research.org"
   },
   synapseOauthClients: {
     local: {
@@ -81,7 +81,7 @@ export default {
     },
     production: {
       vendor: 'synapse',
-      clientId: '100018',
+      clientId: '100435',
       signIn: 'https://signin.synapse.org/?'
     },
     "local-prod": {
@@ -97,7 +97,7 @@ export default {
     },
     "production-prod": {
       vendor: 'synapse',
-      clientId: '100018',
+      clientId: '100435',
       signIn: 'https://signin.synapse.org/?'
     }
   },
