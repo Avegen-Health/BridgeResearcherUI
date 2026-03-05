@@ -23,18 +23,31 @@ module.exports = {
         removeRedundantAttributes: true,
         removeScriptTypeAttributes: true,
         removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true        
-      },      
+        useShortDoctype: true
+      },
       hash: true,
-      template: path.resolve('app/template.html'), 
+      template: path.resolve('app/template.html'),
       filename: path.resolve('app/index.html')
+    }),
+    new HtmlWebpackPlugin({
+      minify: {
+        collapseWhitespace: true,
+        removeComments: false,
+        removeRedundantAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true
+      },
+      hash: true,
+      template: path.resolve('app/template.html'),
+      filename: path.resolve('app/error.html')
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[fullhash].css',
       chunkFilename: '[id].css',
       ignoreOrder: false, // Enable to remove warnings about conflicting order
     })
-  ],  
+  ],
   module: {
     rules: [
       {
@@ -51,16 +64,16 @@ module.exports = {
         }, 'css-loader', 'sass-loader']
       },
       {
-        test: /\.html$/, 
+        test: /\.html$/,
         use: {
-          loader: 'html-loader', 
+          loader: 'html-loader',
           options: {
             minimize: {
               removeComments: false
             }
           }
         }
-      }    
+      }
     ]
   }
 };
