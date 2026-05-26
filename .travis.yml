@@ -21,14 +21,13 @@ deploy:
     on:
       branch: develop
   - provider: s3
-    access_key_id: AKIAWKBC6B4EVCA652NR
+    access_key_id: AKIATMSHFP3OEFUATAP7
     secret_access_key:
-      secure: 4crKCaSzpoJ97w1++c43LGwJQrRyDHkF1uFEgL8oLObhwfjaNcsvrdX6r3h1/uK1CG1yW1CQAZWhgP55Cz+RRgxByGnWG31iB5G/LPDjxpkjJjyRvBEZi9TEmXnE1RyHIYQhouUl+TExa5/pcBtx4TJHkLYpM07Pa/Bq/gDd96iAlpmq2tldQT1BvUh7ohU5uzLG3NjFV3WVfM9YoLEm2wVEDdemft50VPxYUaGQmb8NP4EHD9Zrxb3rgYa08UkinHvEZTJ+otg9a0vvcdayC6aryAIES3TSmvmP+OCO4fbUXavRqRDYVBuNz1FPScbaEyC1+XHzPYZmLSJ/YBjl3YKYC+1DK1RkhERmzvjKWMdpEuzIFrTvomrV67/3GwtOu8Vu16wxLUAA1ZGk63yhX28M2rDrsoL/kqI8dQviNkDDUy0bL8XjCqhM8mW8Tnmbft1PZyVYz1bZEXZGhG6su4SYT4cSRHNr1Aj/I47hxRK5hoXCc4aOo8gHa7USFlTtnKQ9I3/pjWeXLJpvEqhbuRYHfkJvsJ/Y3TDGiFzjJkrh+D2DDexBAhIVWmTk+MZRytRbIaTh9W5x+r/I0MPayGwpbzmCOkZ5+TJnjiEF5NKCgSiIZW/Wflk6HL41eoxKfbGGegUh44VvMMQWV/sNRCJgw2mPVls5fZWPkmOi/wc=
+      secure: ZKKuHwP6PEzCc7slpiTDayrBCji0wyZqbG5QnTTyHO5UfJfRPwtWlRjK7ReBEuZ6BlxAXxIjGHQMVmSpB9F1gZW6edbmnCyPkaw20hAZy8qS9MPynre/u4ASIjpBWu7dpkZutUQ2lwgAK2FOP21mKDfkhe+X/bJlUhekHGWUw8BHYqO99JnQ8ydH7qXMP5MXP9bCxAqpIh36YYR3R65PhMfxOk8c/TxMcMndWEfCsec0onAf5gvSkdCFROkq8QFDbVWJspwh/DTVNpzONlMnWk/xZ9xIAGWJt5bqya6FJDoK1LWJwtKcXzsvnzZW2FhCQVq4Kw6bx5oGkRL9gyvG513zk3hwP58LAQet04W+wr3eivBwXgqpayCTA6PDXIiYeYTdST+3w56ZmoqZMzoel+NWiSgAZEzzhmqApeRbuK8IsbiOFifuhdhhVWRHYLKnXwuGtQB9gP8gtyx1ETczpw1LS0A/9Brso0IgZ24R50Fk+pEihsnf2psyA9gugzD0BGf9eLTmlqur1wD+bFoIiZJAUwihk/QH9LH8yb9X3qTgUxwxZgRudCtZQ939vvCKKaK53GqAEcKXMyK5QF7T6kc6cifsu2o+tcfL4B96osslkXl4ChwJJTUpNpMEmkKv4lFayf1cobVBo09igYXkSVK8t2rqanml0zDyPcF6Mzw=
     edge: true
-    bucket: research.gvbridge.org
+    bucket: bsm.grip-research.org
     region: us-east-1
     skip_cleanup: true
-    acl: public_read
     detect_encoding: false
     local_dir: app
     on:
