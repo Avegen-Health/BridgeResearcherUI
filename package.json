@@ -1,10 +1,10 @@
 {
   "name": "bridge-researcher-ui",
   "version": "0.0.4",
-  "description": "The Bridge Study Manager for the Sage Bionetworks Bridge Server",
+  "description": "The Bridge Study Manager for the GRIP Research Bridge Server",
   "main": "index.js",
   "engine": "node 10.15.1",
-  "author": "Bridge Server Team <bridgeit@sagebase.org>",
+  "author": "Bridge Server Team <bridgeit@grip-research.org>",
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf app/main**{js,css,txt}",
